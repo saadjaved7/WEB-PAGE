@@ -71,6 +71,7 @@
       .card-container {
         margin: 10px 20px;
         position: relative;
+        overflow: hidden;
       }
 
       .card-image {
@@ -85,21 +86,20 @@
         left: 0;
         transform: translateY(-50%);
         background-color: rgba(0, 50, 100, 0.7);
-        padding: 10px 30px;
-        min-width: 60px;
-        max-width: 40%;
+        padding: 15px 30px;
+        width: 380px;
         color: white;
         box-shadow: 3px 3px 5px rgb(22, 23, 23);
       }
 
       .card-title {
-        font-size: clamp(14px, 2.5vw, 28px);
+        font-size: 26px;
         margin-bottom: 10px;
         text-align: right;
       }
 
       .card-text {
-        font-size: clamp(11px, 1.5vw, 16px);
+        font-size: 15px;
         line-height: 1.5;
         text-align: right;
       }
@@ -117,7 +117,7 @@
 
       .info-card {
         background: rgba(0, 40, 80, 0.95);
-        padding: 15px 15px;
+        padding: 15px;
         color: white;
         border-right: 1px solid rgba(255, 255, 255, 0.1);
       }
@@ -459,8 +459,16 @@
 
       @media (max-width: 1024px) {
         .card {
-          max-width: 45%;
-          padding: 10px 25px;
+          width: 320px;
+          padding: 12px 25px;
+        }
+
+        .card-title {
+          font-size: 22px;
+        }
+
+        .card-text {
+          font-size: 13px;
         }
 
         .main-wrapper {
@@ -495,8 +503,18 @@
         }
 
         .card {
-          max-width: 60%;
+          width: 240px;
+          top: 25%;
+          transform: translateY(-25%);
           padding: 8px 15px;
+        }
+
+        .card-title {
+          font-size: 16px;
+        }
+
+        .card-text {
+          font-size: 11px;
         }
 
         .info-cards {
@@ -565,8 +583,18 @@
         }
 
         .card {
-          max-width: 75%;
-          padding: 6px 12px;
+          width: 180px;
+          top: 20%;
+          transform: translateY(-20%);
+          padding: 6px 10px;
+        }
+
+        .card-title {
+          font-size: 13px;
+        }
+
+        .card-text {
+          font-size: 10px;
         }
 
         .info-cards {
